@@ -29,5 +29,12 @@ namespace TesteLeilao.Paginas
             WebDriver.Navigate().GoToUrl("http://localhost:8080/");
             WebDriver.FindElement(By.LinkText("Usuários")).Click();
         }
+
+        public void ExcluiUsuarioDaPosicao(int posicao)
+        {
+            WebDriver.FindElements(By.TagName("button"))[posicao - 1].Click();
+            IAlert alert = WebDriver.SwitchTo().Alert();
+            alert.Accept();
+        }
     }
 }

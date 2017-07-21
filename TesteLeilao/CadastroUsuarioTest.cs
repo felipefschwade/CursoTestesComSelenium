@@ -56,5 +56,16 @@ namespace TesteLeilao
             Assert.IsTrue(pageCadastro.TemErroDeEmail());
             Assert.IsTrue(pageCadastro.TemErroDeNome());
         }
+
+        [TestMethod]
+        public void DeveExcluirOUsuário()
+        {
+            var usuariosPage = new UsuariosPage(Driver);
+            usuariosPage.Visita();
+
+            usuariosPage.ExcluiUsuarioDaPosicao(1);
+
+            Assert.IsFalse(Driver.PageSource.Contains("Adriano"));
+        }
     }
 }
