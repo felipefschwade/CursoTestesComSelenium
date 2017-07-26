@@ -63,7 +63,7 @@ namespace TesteLeilao
             var usuariosPage = new UsuariosPage(Driver);
             usuariosPage.Visita();
 
-            usuariosPage.ExcluiUsuarioDaPosicao(1);
+            usuariosPage.ExcluiUsuarioDaPosicao(3);
 
             Assert.IsFalse(Driver.PageSource.Contains("Adriano"));
         }
