@@ -1,0 +1,9 @@
+<Playlist Version="1.0">
+  <Add Test="TesteLeilao.LeilaoTest.DeveExibirMensagemDeErroSeCadastradoSemValor" />
+  <Add Test="TesteLeilao.LeilaoTest.DeveCadastrarUmLeilao" />
+  <Add Test="TesteLeilao.UsuariosTest.DeveCadastrarOUsuario" />
+  <Add Test="TesteLeilao.UsuariosTest.DeveAlterarOUsuário" />
+  <Add Test="TesteLeilao.UsuariosTest.DeveExcluirOUsuário" />
+  <Add Test="TesteLeilao.UsuariosTest.NaoDeveCadastrarSemNomeESemEmail" />
+  <Add Test="TesteLeilao.UsuariosTest.NaoDeveCadastrarSemNome" />
+</Playlist>

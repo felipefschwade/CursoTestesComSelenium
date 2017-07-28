@@ -36,5 +36,11 @@ namespace TesteLeilao.Paginas
             IAlert alert = WebDriver.SwitchTo().Alert();
             alert.Accept();
         }
+
+        public EditaUsuarioPage EditaUsuarioDaPosicao(int posicao)
+        {
+            WebDriver.FindElements(By.LinkText("editar"))[posicao - 1].Click();
+            return new EditaUsuarioPage(WebDriver);
+        }
     }
 }

@@ -55,8 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroLeilaoTest.cs" />
-    <Compile Include="CadastroUsuarioTest.cs" />
+    <Compile Include="LeilaoTest.cs" />
+    <Compile Include="Paginas\EditaUsuarioPage.cs" />
+    <Compile Include="UsuariosTest.cs" />
     <Compile Include="Paginas\LeilaoCadastroPage.cs" />
     <Compile Include="Paginas\LeiloesPage.cs" />
     <Compile Include="Paginas\CadastraUsuarioPage.cs" />

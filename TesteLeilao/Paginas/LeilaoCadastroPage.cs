@@ -32,5 +32,10 @@ namespace TesteLeilao.Paginas
             }
             campoNome.Submit();
         }
+
+        public bool ChecaMensagem(string mensagem)
+        {
+            return WebDriver.PageSource.Contains(mensagem);
+        }
     }
 }
